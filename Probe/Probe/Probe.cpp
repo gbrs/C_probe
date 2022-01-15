@@ -1,4 +1,49 @@
 ﻿#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string s = "Twas brillig";
+    ofstream f;
+    f.open("E:/file_out.txt");
+    if (f)
+    {
+        f << s << endl;
+        f << s << endl;
+        f << s << endl;
+    }
+    f.close();
+}
+
+
+/*
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    int x;
+    ifstream f;
+    f.open("E:/file.txt");
+    if (f)
+    {
+        while (!f.eof())
+        {
+            f >> x;
+            cout << x << endl;
+        }
+    }
+    f.close();
+
+}
+*/
+
+
+/*
+#include <iostream>
 using namespace std;
 
 int Sum(int a, int b)
@@ -22,3 +67,4 @@ int main()
     }
     cout << s << endl;
 }
+*/
